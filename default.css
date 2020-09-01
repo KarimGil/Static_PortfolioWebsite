@@ -66,7 +66,6 @@ p,li,span,label,input,textarea{
 
 .greeding-wrapper{
 	display:grid;
-	border:2px dashed lightcoral;
 	min-height:10em;
 	text-align:center;
 	align-content:center;}
@@ -80,21 +79,26 @@ p,li,span,label,input,textarea{
 	grid-template-areas:
 	'nav-wrapper nav-wrapper'
 	'left-column right-column'
-	;	
+	;
+	border-radius:5px 5px 0 0;
+	-webkit-box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);	
+	-moz-box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);	
+	box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);	
+
 	}
 	
 .nav-wrapper{
 	grid-area:nav-wrapper;
-	border:1px dashed lightcoral;
+	border-bottom:1px solid var(--borderColor);
+	display:flex;
+	justify-content:space-between;
 	 
 	}
 .left-column{
 	grid-area:left-column;
-	border:1px dashed lightcoral; 
 }
 .right-column{
 	grid-area:right-column;
-	border:1px dashed lightcoral; 
 }
 
 
