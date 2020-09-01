@@ -226,13 +226,40 @@ p,li,span,label,input,textarea,small{
 	display:grid;
 	grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
 	padding-top:50px;
-	padding-bottom:50px;}
+	padding-bottom:50px;
+	gap:100px;}
 	
 #skills {
 	display:flex;
 	justify-content:space-evenly;
 	background-color:var(--previewShadow);}
 
+.hire-me {display:grid;
+align-content:center;
+text-align:center;
+margin-left:4vh;}
+
+.post-wrapper{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,380px);
+	gap:20px;
+	justify-content:center;
+	}
+.post {
+	background-color:#FFF;
+	-webkit-box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);	
+	-moz-box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);	
+	box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);}
+	
+.post-preview {
+	margin:10px;}
+
+
+.thumbnail {
+	height:250px;
+	width:100%;
+	display:block;
+	object-fit:cover;}
 
 @media screen and (max-width:1200px){
 .main-container {
@@ -256,6 +283,9 @@ p,li,span,label,input,textarea,small{
 .right-column {
 	justify-content:center;}
 	
+..post-wrapper{
+	grid-template-columns:1fr;
+	}
 	
 	}
 	
