@@ -1,9 +1,11 @@
+
+{% load static %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Karim Gilani</title>
-<link rel="stylesheet" href="default.css" type="text/css" />
+<link rel="stylesheet" href="{%static 'css/default.css' %}" type="text/css" />
 <link id="theme-style" rel="stylesheet" href="" type="text/css" />
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
@@ -33,7 +35,7 @@
                 </ul>
         	</div>
             <div class="left-column">
-            	<img src="Images/profile picture.jpg" id="profile-pic" />
+            	<img src="{% static 'Images/profile picture.jpg' %}" id="profile-pic" />
                 <h5 style="text-align:center; line-height:0;">Personalize Theme</h5>
                 <div id="theme-settings">
                 	<div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -99,7 +101,7 @@
         	</div>
             
             <div class="hire-me">
-            <img src="Images/fiverr profile.jpg" id="hire-image" />
+            <img src="{% static 'Images/fiverr profile.jpg' %}" id="hire-image" />
             <h3>Hire me on Fiverr</h3>
             <a target="_blank" href="https://www.fiverr.com/karimgil00">Fiverr : @KarimGil00</a>
             </div>
@@ -114,7 +116,7 @@
 
 		<div class="post-wrapper">
         	<div class="post">
-            	<img src="Images/Portfolio 1.jpg" class="thumbnail" />
+            	<img src="{% static 'Images/Portfolio 1.jpg' %}" class="thumbnail" />
             	<div class="post-preview">
                 <h6 class="post-title">Curi Social Network</h6>
                 <p class="post-intro">Curi is a social network for individuals or groups who like to discuss and keep track of everything they love.</p>
@@ -123,7 +125,7 @@
             </div>
             
             <div class="post">
-            	<img src="Images/Portfolio 2.jpg" class="thumbnail" />
+            	<img src="{% static 'Images/Portfolio 2.jpg' %}" class="thumbnail" />
             	<div class="post-preview">
                 <h6 class="post-title">Empaxis data-driven</h6>
                 <p class="post-intro">Empaxis was the first middle and back office outsourcing company designed to deliver offshore labor exclusively to asset managers, hedge funds, and wealth managers.</p>
@@ -133,7 +135,7 @@
             </div>
             
             <div class="post">
-            	<img src="Images/Portfolio 3.jpg" class="thumbnail" />
+            	<img src="{% static 'Images/Portfolio 3.jpg' %}" class="thumbnail" />
             	<div class="post-preview">
                 <h6 class="post-title">Katshing - Surf Better</h6>
                 <p class="post-intro">katshing är mobiloperatören med målet att hela Sverige skall ha fri surf i mobilen till ett lågt pris!</p>
@@ -171,8 +173,11 @@
 			</form>
 	</div>
 </section>
+<script type="text/javascript">
+	static = "{% static 'css' %}"
+</script>
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 
 </body>
 </html>
